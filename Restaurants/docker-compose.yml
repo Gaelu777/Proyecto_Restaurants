@@ -17,7 +17,7 @@ services:
       MARIADB_ROOT_PASSWORD: ''
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
     ports:
-      - "3306:3306"
+      - "3307:3306" # Exponemos el puerto 3307 en el host para evitar conflictos con MariaDB local
     volumes:
       - db_data:/var/lib/mysql
 volumes:
